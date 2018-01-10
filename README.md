@@ -1,10 +1,10 @@
 
 # react-native-alipay
 
-[![NPM Version](https://img.shields.io/npm/v/@0x5e/react-native-alipay.svg)](https://npmjs.org/package/@0x5e/react-native-alipay)
+[![NPM Version](https://img.shields.io/npm/v/react-native-alipay.svg)](https://npmjs.org/package/react-native-alipay)
 [![Dependency Status](https://img.shields.io/david/0x5e/react-native-alipay.svg)](https://david-dm.org/0x5e/react-native-alipay)
 [![Build Status](https://img.shields.io/travis/0x5e/react-native-alipay/master.svg)](https://travis-ci.org/0x5e/react-native-alipay)
-[![License](https://img.shields.io/npm/l/@0x5e/react-native-alipay.svg)](./LICENSE)
+[![License](https://img.shields.io/npm/l/react-native-alipay.svg)](./LICENSE)
 
 Alipay SDK for React Native. Support mobile webpage url payment. Support RN >= 0.47.
 
@@ -16,7 +16,7 @@ Native AlipaySDK library ([download page](https://docs.open.alipay.com/54/104509
 ## Features
 
 - [x] 快捷登录授权（ https://docs.open.alipay.com/218/105327/ ）
-- [x] APP支付（ https://docs.open.alipay.com/204/105465/ 
+- [x] APP支付（ https://docs.open.alipay.com/204/105465/
 ）
 - [x] 手机网站转APP支付（ https://docs.open.alipay.com/204/105695/ ）
 - [x] 参数签名（ https://docs.open.alipay.com/291/106118/ ）
@@ -29,7 +29,7 @@ Native AlipaySDK library ([download page](https://docs.open.alipay.com/54/104509
 
 ## Getting started
 
-`$ yarn add @0x5e/react-native-alipay`
+`$ yarn add react-native-alipay`
 
 ### Native module installation
 
@@ -71,7 +71,7 @@ Example code:
 
 ```javascript
 import QueryString from 'query-string';
-import Alipay from '@0x5e/react-native-alipay';
+import Alipay from 'react-native-alipay';
 
 // 快捷登录授权
 try {
@@ -118,7 +118,7 @@ The `result` data has following fields:
 Example code:
 
 ```javascript
-import Alipay from '@0x5e/react-native-alipay';
+import Alipay from 'react-native-alipay';
 
 // APP支付
 try {
@@ -150,7 +150,7 @@ Returns object with following fields:
 Example code:
 
 ```javascript
-import Alipay from '@0x5e/react-native-alipay';
+import Alipay from 'react-native-alipay';
 
 // 手机网站转APP支付
 try {
@@ -169,7 +169,7 @@ If you want to do client side signature instead of server side (not recommend), 
 - `object` {Object} Object to be signed. The `object.sign_type` can specify `RSA` (default) or `RSA2`.
 - `privateKey` {String} Private key in `PKCS#1` or `PKCS#8` format.
 
-Note: 
+Note:
 `PKCS#1` private key should have wrapped with `-----BEGIN RSA PRIVATE KEY-----` and `-----END RSA PRIVATE KEY-----`
 `PKCS#8` private key should have wrapped with `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----`
 
@@ -178,7 +178,7 @@ Returns The query string with signature. See [Process of signature](https://docs
 Example code:
 
 ```javascript
-import Alipay from '@0x5e/react-native-alipay';
+import Alipay from 'react-native-alipay';
 
 // 签名
 let params = {
